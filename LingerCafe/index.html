@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linger 慢半拍 · 咖啡馆</title>
+  <meta name="description" content="Linger 慢半拍咖啡馆 — 时间在这里，不打烊。绿色自然风，文艺小众咖啡空间。" />
+
+  <!-- Google Fonts（可商用） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- ZCOOL XiaoWei：中文手写风；Noto Serif SC：中文衬线；Cormorant Garamond：英文衬线 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- AOS.js — 滚动动画（CDN，轻量） -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== 全站背景小树（固定在页面两侧） ========== -->
+  <div class="bg-trees bg-trees--left"></div>
+  <div class="bg-trees bg-trees--right"></div>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand font-handwrite">
+        Linger <span>慢半拍</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#menu">菜单</a></li>
+        <li><a href="#blog">动态</a></li>
+        <li><a href="#info">门店</a></li>
+        <li><a href="#booking">预订</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+
+    <!-- 背景图片 — 用 img 标签避免 CSS 缓存问题 -->
+    <img src="images/hero-bg.jpg" alt="" class="hero-bg-img" />
+
+    <!-- 左右叶子装饰（纯 CSS，不遮挡文字） -->
+    <div class="hero-leaf-deco hero-leaf-deco--left"></div>
+    <div class="hero-leaf-deco hero-leaf-deco--right"></div>
+
+    <div class="hero-content" data-aos="fade-up">
+      <p class="hero-brand-en font-en">Linger Coffee</p>
+      <h1 class="hero-title font-handwrite">慢半拍</h1>
+      <p class="hero-subtitle">时间在这里，不打烊</p>
+      <p class="hero-slogan">世界很急，你可以慢半拍</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">查看菜单</a>
+        <a href="#booking" class="btn btn-outline">预订座位</a>
+      </div>
+    </div>
+    <div class="scroll-hint">向下探索</div>
+  </section>
+
+  <!-- ========== 关于我们 ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- 左侧图片 -->
+        <div class="about-image" data-aos="fade-right">
+          <img src="images/about.jpg" alt="慢半拍咖啡馆环境" />
+        </div>
+        <!-- 右侧文字 -->
+        <div class="about-text" data-aos="fade-left">
+          <p class="section-tag">About Us</p>
+          <h2 class="section-title font-handwrite">慢慢来，<br />比较快</h2>
+          <div class="divider-wood"></div>
+          <p>
+            「慢半拍」诞生于一个很简单的念头——每天那么急，总得有个地方让人停下来。
+          </p>
+          <p>
+            我们在一栋老木屋里开了这家小店。没有 Wi-Fi 密码牌，没有催促你的标语。你可以点一杯手冲，翻一本翻旧了的书，或者什么都不做，就坐着。
+          </p>
+          <p>
+            咖啡豆来自几个我们亲自去过的庄园，甜点是隔壁阿姨的手艺。这里不完美，但真实。
+          </p>
+          <p style="margin-top:24px;">
+            <em style="color:var(--green-mid); font-style:normal; font-size:0.9rem;">
+              "Linger — 逗留，徘徊，舍不得离开。"
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 有机曲线分隔：关于 → 菜单（颜色与上方"关于"一致） -->
+  <div class="curve-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,10 480,80 720,45 C960,10 1200,70 1440,35 L1440,0 L0,0 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <!-- ========== 菜单 ========== -->
+  <section id="menu" class="section-alt">
+    <div class="container">
+      <p class="section-tag" data-aos="fade-up">Our Menu</p>
+      <h2 class="section-title font-handwrite" data-aos="fade-up">喝什么，慢慢选</h2>
+      <div class="divider-wood" data-aos="fade-up"></div>
+      <p class="section-subtitle" data-aos="fade-up">
+        所有咖啡均使用当日新鲜烘焙豆，甜点每日限量供应。
+      </p>
+
+      <!-- 筛选按钮 -->
+      <div class="menu-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="coffee">咖啡</button>
+        <button class="filter-btn" data-filter="non-coffee">非咖啡</button>
+        <button class="filter-btn" data-filter="dessert">甜点</button>
+      </div>
+
+      <!-- 菜单卡片网格 -->
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- 咖啡类 -->
+        <div class="menu-card" data-category="coffee" data-aos="fade-up">
+          <div class="menu-card-image">
+            <img src="images/menu-americano.jpg" alt="美式咖啡" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">美式咖啡</h3>
+            <p class="menu-card-desc">深烘拼配，干净明亮，不加任何东西也好喝。</p>
+            <p class="menu-card-price">¥22</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee" data-aos="fade-up" data-aos-delay="80">
+          <div class="menu-card-image">
+            <span class="menu-card-badge">人气</span>
+            <img src="images/menu-latte.jpg" alt="拿铁" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">拿铁</h3>
+            <p class="menu-card-desc">燕麦奶可选，奶泡细腻，是我们卖得最多的那杯。</p>
+            <p class="menu-card-price">¥28</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee" data-aos="fade-up" data-aos-delay="160">
+          <div class="menu-card-image">
+            <img src="images/menu-flatwhite.jpg" alt="澳白" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">澳白</h3>
+            <p class="menu-card-desc">比拿铁更浓的咖啡感，薄奶泡，适合想喝明白的人。</p>
+            <p class="menu-card-price">¥30</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee" data-aos="fade-up">
+          <div class="menu-card-image">
+            <img src="images/menu-pourover.jpg" alt="手冲" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">手冲（每日一替）</h3>
+            <p class="menu-card-desc">店里每天换一支豆子，写在黑板上。问我们就对了。</p>
+            <p class="menu-card-price">¥35</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee" data-aos="fade-up" data-aos-delay="80">
+          <div class="menu-card-image">
+            <img src="images/menu-signature.jpg" alt="特调：慢半拍" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">特调：慢半拍</h3>
+            <p class="menu-card-desc">浓缩 +  tonka 糖浆 + 橙皮，我们的招牌，甜而不腻。</p>
+            <p class="menu-card-price">¥38</p>
+          </div>
+        </div>
+
+        <!-- 非咖啡类 -->
+        <div class="menu-card" data-category="non-coffee" data-aos="fade-up">
+          <div class="menu-card-image">
+            <img src="images/menu-tealatte.jpg" alt="红茶拿铁" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">红茶拿铁</h3>
+            <p class="menu-card-desc">锡兰红茶 + 鲜奶，不加咖啡也温暖。</p>
+            <p class="menu-card-price">¥26</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="non-coffee" data-aos="fade-up" data-aos-delay="80">
+          <div class="menu-card-image">
+            <img src="images/menu-soda.jpg" alt="季节特饮" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">季节特饮（夏季：薄荷柠檬汽水）</h3>
+            <p class="menu-card-desc">新鲜薄荷 + 黄柠檬 + 气泡水，不甜，很爽。</p>
+            <p class="menu-card-price">¥24</p>
+          </div>
+        </div>
+
+        <!-- 甜点类 -->
+        <div class="menu-card" data-category="dessert" data-aos="fade-up">
+          <div class="menu-card-image">
+            <span class="menu-card-badge">限量</span>
+            <img src="images/menu-scone.jpg" alt="司康" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">司康（原味/葡萄干）</h3>
+            <p class="menu-card-desc">每天现烤，外脆内软，配凝脂奶油吃是灵魂。</p>
+            <p class="menu-card-price">¥18</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="dessert" data-aos="fade-up" data-aos-delay="80">
+          <div class="menu-card-image">
+            <img src="images/menu-cake.jpg" alt="巧克力蛋糕" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">巧克力蛋糕</h3>
+            <p class="menu-card-desc">70% 黑巧，不很甜，配美式刚好。</p>
+            <p class="menu-card-price">¥28</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="dessert" data-aos="fade-up" data-aos-delay="160">
+          <div class="menu-card-image">
+            <img src="images/menu-cookie.jpg" alt="曲奇" />
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">曲奇三块装</h3>
+            <p class="menu-card-desc">黄油曲奇，原味/抹茶/肉桂，三块起卖。</p>
+            <p class="menu-card-price">¥15</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 有机曲线分隔：菜单 → 动态（颜色与上方"菜单"一致） -->
+  <div class="curve-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 C240,20 480,80 720,50 C960,20 1200,75 1440,45 L1440,0 L0,0 Z" fill="var(--cream-dark)"/>
+    </svg>
+  </div>
+
+  <!-- ========== 动态 / 博客 ========== -->
+  <section id="blog">
+    <div class="container">
+      <p class="section-tag" data-aos="fade-up">News & Blog</p>
+      <h2 class="section-title font-handwrite" data-aos="fade-up">店里最近</h2>
+      <div class="divider-wood" data-aos="fade-up"></div>
+      <p class="section-subtitle" data-aos="fade-up">
+        活动预告、咖啡知识、偶尔碎碎念。
+      </p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card" data-aos="fade-up">
+          <div class="blog-card-image">
+            <img src="images/blog-workshop.jpg" alt="手冲体验课" />
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">2026 年 6 月 15 日</p>
+            <h3 class="blog-card-title">手冲体验课 · 第一期</h3>
+            <p class="blog-card-excerpt">
+              周六下午，我们准备了 3 支豆子，带你从磨豆到注水，完整体验一次手冲。
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-card-image">
+            <img src="images/blog-coffeebeans.jpg" alt="新豆上架" />
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">2026 年 6 月 1 日</p>
+            <h3 class="blog-card-title">新豆上架：埃塞俄比亚·耶加雪菲</h3>
+            <p class="blog-card-excerpt">
+              白花香，柠檬酸，干净得像一口山泉水。这个夏天，它是我们的主打。
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-card-image">
+            <img src="images/blog-story.jpg" alt="为什么叫慢半拍" />
+          </div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">2026 年 5 月 20 日</p>
+            <h3 class="blog-card-title">为什么叫「慢半拍」？</h3>
+            <p class="blog-card-excerpt">
+              创始人写了一篇短文，关于开这家店的初衷，和「慢」这个字在我们这里的真正意思。
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 有机曲线分隔：动态 → 门店（颜色与上方"动态"一致） -->
+  <div class="curve-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,50 C240,15 480,75 720,40 C960,10 1200,65 1440,35 L1440,0 L0,0 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <!-- ========== 门店信息 ========== -->
+  <section id="info" class="section-alt">
+    <div class="container">
+      <p class="section-tag" data-aos="fade-up">Visit Us</p>
+      <h2 class="section-title font-handwrite" data-aos="fade-up">来找我们</h2>
+      <div class="divider-wood" data-aos="fade-up"></div>
+
+      <div class="info-grid">
+        <!-- 左侧：门店详情 -->
+        <div data-aos="fade-right">
+          <ul class="info-details">
+            <li>
+              <div class="info-icon">📍</div>
+              <div>
+                <p class="info-label">地址</p>
+                <p class="info-value">
+                  杭州市西湖区××路××号<br />
+                  （近××地铁站 B 口步行 5 分钟）
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon">🕐</div>
+              <div>
+                <p class="info-label">营业时间</p>
+                <p class="info-value">
+                  周一至周五  08:00 – 22:00<br />
+                  周末及节假日  09:00 – 23:00
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon">📞</div>
+              <div>
+                <p class="info-label">联系电话</p>
+                <p class="info-value">0571-xxxxxxxx / 138xxxxxxxx</p>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon">✉️</div>
+              <div>
+                <p class="info-label">邮箱</p>
+                <p class="info-value">hello@lingercoffee.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 右侧：手绘地图 -->
+        <div data-aos="fade-left">
+          <div class="map-placeholder" id="mapPlaceholder" onclick="window.open('https://uri.amap.com/marker?position=120.1552,30.2741&name=Linger%E6%85%A2%E5%8D%8A%E6%8B%8D','_blank')">
+            <img src="images/map-screenshot.jpg" alt="Linger慢半拍咖啡馆位置" class="map-image" />
+          </div>
+          <p style="font-size:0.78rem; color:var(--text-light); margin-top:12px; text-align:center;">
+            点击地图，唤起导航
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 有机曲线分隔：门店 → 预订（颜色与上方"门店"一致） -->
+  <div class="curve-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,55 C240,20 480,80 720,45 C960,15 1200,70 1440,40 L1440,0 L0,0 Z" fill="var(--cream-dark)"/>
+    </svg>
+  </div>
+
+  <!-- ========== 预订表单 ========== -->
+  <section id="booking">
+    <div class="container">
+      <p class="section-tag" data-aos="fade-up">Reservation</p>
+      <h2 class="section-title font-handwrite" data-aos="fade-up">预订座位</h2>
+      <div class="divider-wood" data-aos="fade-up"></div>
+      <p class="section-subtitle" data-aos="fade-up">
+        周末和节假日建议提前预订。提交后我们会尽快与你确认。
+      </p>
+
+      <div class="booking-grid" data-aos="fade-up">
+        <!-- 左侧：表单 -->
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">姓名 *</label>
+              <input type="text" id="name" name="name" required placeholder="你的称呼" />
+            </div>
+            <div class="form-group">
+              <label for="phone">电话 *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="方便联系你" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">日期 *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">时间 *</label>
+              <select id="time" name="time" required>
+                <option value="">选择时间</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">人数 *</label>
+              <select id="guests" name="guests" required>
+                <option value="">几位？</option>
+                <option value="1">1 人</option>
+                <option value="2">2 人</option>
+                <option value="3">3 人</option>
+                <option value="4">4 人</option>
+                <option value="5+">5 人及以上</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">场合（可选）</label>
+              <select id="occasion" name="occasion">
+                <option value="">请选择</option>
+                <option value="casual">随便坐坐</option>
+                <option value="date">约会</option>
+                <option value="work">办公/学习</option>
+                <option value="celebration">庆祝</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="note">备注（可选）</label>
+            <textarea id="note" placeholder="有什么想提前告诉我们的？"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem;">
+            提交预订
+          </button>
+          <div class="form-success" id="formSuccess">
+            预订已收到，我们会尽快与你联系确认 🌿
+          </div>
+        </form>
+
+        <!-- 右侧：提示文字 -->
+        <div style="padding-top:8px;" data-aos="fade-left">
+          <h3 style="font-size:1.1rem; color:var(--green-dark); margin-bottom:20px; line-height:1.6;">
+            一些说明
+          </h3>
+          <ul style="list-style:none; color:var(--text-light); font-size:0.9rem; line-height:2.2;">
+            <li>🕐 请在到店前至少 <strong style="color:var(--text);">2 小时</strong> 提交预订</li>
+            <li>🪑 我们预留座位 <strong style="color:var(--text);">15 分钟</strong>，迟到请提前告知</li>
+            <li>🌿 5 人以上请在备注里说明，我们会安排合适的位置</li>
+            <li>📞 如遇满座，我们会电话联系你协商调整</li>
+            <li>🐶 宠物友好，欢迎带毛孩子来</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 有机曲线分隔：预订 → Footer（颜色与上方"预订"一致） -->
+  <div class="curve-divider curve-reverse">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,50 C240,10 480,70 720,40 C960,15 1200,60 1440,30 L1440,0 L0,0 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- 品牌简介 -->
+        <div>
+          <div class="footer-brand font-handwrite">
+            Linger <span>慢半拍</span>
+          </div>
+          <p class="footer-desc">
+            时间在这里，不打烊。世界很急，你可以慢半拍。
+          </p>
+        </div>
+        <!-- 快速链接 -->
+        <div>
+          <p class="footer-title">导航</p>
+          <ul class="footer-links">
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#menu">菜单</a></li>
+            <li><a href="#blog">动态</a></li>
+            <li><a href="#info">门店信息</a></li>
+          </ul>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <p class="footer-title">联系</p>
+          <ul class="footer-links">
+            <li>📍 杭州市西湖区××路××号</li>
+            <li>📞 0571-xxxxxxxx</li>
+            <li>✉️ hello@lingercoffee.com</li>
+          </ul>
+        </div>
+        <!-- 关注我们 -->
+        <div>
+          <p class="footer-title">关注我们</p>
+          <ul class="footer-links">
+            <li><a href="#">小红书</a></li>
+            <li><a href="#">微信公众号</a></li>
+            <li><a href="#">抖音</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Linger 慢半拍 Coffee. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== 全站背景小树（左侧） ========== -->
+  <div class="bg-trees bg-trees--left">
+    <div class="bg-tree bg-tree--sm" style="left:12px; --tree-top:12%; --tree-color:#5A7A5A; --tree-color2:#6B9F6B; --tree-color3:#8FBC8F;" data-threshold="0.0"></div>
+    <div class="bg-tree bg-tree--lg" style="left:28px; --tree-top:28%; --tree-color:#3D6B4E; --tree-color2:#4A7C59; --tree-color3:#5A9A6E;" data-threshold="0.08"></div>
+    <div class="bg-tree"              style="left:50px; --tree-top:45%; --tree-color:#4A7C59; --tree-color2:#5A9A6E; --tree-color3:#6BBF7A;" data-threshold="0.18"></div>
+    <div class="bg-tree bg-tree--sm" style="left:8px;  --tree-top:58%; --tree-color:#5A7A5A; --tree-color2:#6B9F6B; --tree-color3:#8FBC8F;" data-threshold="0.30"></div>
+    <div class="bg-tree"              style="left:38px; --tree-top:72%; --tree-color:#3D6B4E; --tree-color2:#4A7C59; --tree-color3:#5A9A6E;" data-threshold="0.45"></div>
+    <div class="bg-tree bg-tree--lg" style="left:60px; --tree-top:85%; --tree-color:#2C5A3A; --tree-color2:#3D6B4E; --tree-color3:#4A7C59;" data-threshold="0.60"></div>
+  </div>
+
+  <!-- ========== 全站背景小树（右侧，CSS 镜像翻转） ========== -->
+  <div class="bg-trees bg-trees--right">
+    <div class="bg-tree bg-tree--sm" style="left:14px; --tree-top:18%; --tree-color:#5A7A5A; --tree-color2:#6B9F6B; --tree-color3:#8FBC8F;" data-threshold="0.04"></div>
+    <div class="bg-tree bg-tree--lg" style="left:30px; --tree-top:35%; --tree-color:#3D6B4E; --tree-color2:#4A7C59; --tree-color3:#5A9A6E;" data-threshold="0.14"></div>
+    <div class="bg-tree"              style="left:52px; --tree-top:52%; --tree-color:#4A7C59; --tree-color2:#5A9A6E; --tree-color3:#6BBF7A;" data-threshold="0.25"></div>
+    <div class="bg-tree bg-tree--sm" style="left:6px;  --tree-top:65%; --tree-color:#5A7A5A; --tree-color2:#6B9F6B; --tree-color3:#8FBC8F;" data-threshold="0.38"></div>
+    <div class="bg-tree"              style="left:40px; --tree-top:78%; --tree-color:#3D6B4E; --tree-color2:#4A7C59; --tree-color3:#5A9A6E;" data-threshold="0.52"></div>
+    <div class="bg-tree bg-tree--lg" style="left:62px; --tree-top:90%; --tree-color:#2C5A3A; --tree-color2:#3D6B4E; --tree-color3:#4A7C59;" data-threshold="0.68"></div>
+  </div>
+
+  <!-- 飘落叶子容器 -->
+  <div id="fallingLeaves"></div>
+
+  <!-- AOS.js CDN -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- 主 JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
